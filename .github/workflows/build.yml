@@ -1,0 +1,32 @@
+name: Build and Test
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version your project uses
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        run: npm run lint # Adjust if you have a specific linting script
+
+      - name: Run tests
+        run: npm test # Adjust if you have a specific test command
+
+      - name: Build the application
+        run: npm run build # Adjust if you have a specific build script
