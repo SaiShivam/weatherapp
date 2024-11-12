@@ -1,0 +1,15 @@
+{
+  "name": "weather-webapp",
+  "version": "1.0.0",
+  "description": "Weather app project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.0"
+  }
+}
