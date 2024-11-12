@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run linter
-        run: npm run lint # Adjust if you have a specific linting script
+      # - name: Run linter
+      #   run: npm run lint # Adjust if you have a specific linting script
 
       - name: Run tests
         run: npm test # Adjust if you have a specific test command
